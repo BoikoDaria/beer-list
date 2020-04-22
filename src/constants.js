@@ -1,0 +1,1 @@
+export const FAVORITE_KEY = 'beer-favorite-items';

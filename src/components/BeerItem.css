@@ -1,0 +1,52 @@
+.beer-item {
+    display: flex;
+    width: 98%;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+.beer-item-img {
+    flex-shrink: 0;
+    width: 45px;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+}
+
+.beer-item-metadata {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.beer-item-description {
+    font-size: 14px;
+    margin: 5px;
+    color: #3e4736;
+}
+
+.beer-item-name {
+    font-size: 16px;
+    margin: 5px;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    color: #869778;
+}
+
+.favorite-icon {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+.favorite-icon-active {
+    mask: url('../img/favorite-active.svg');
+    mask-size: 20px;
+}
+.favorite-icon-inactive {
+    mask: url('../img/favorite-inactive.svg');
+    mask-size: 20px;
+}
