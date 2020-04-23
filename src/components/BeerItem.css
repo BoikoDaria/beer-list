@@ -35,18 +35,3 @@
     font-weight: 600;
     color: #869778;
 }
-
-.favorite-icon {
-    width: 20px;
-    height: 20px;
-    background-color: black;
-}
-
-.favorite-icon-active {
-    mask: url('../img/favorite-active.svg');
-    mask-size: 20px;
-}
-.favorite-icon-inactive {
-    mask: url('../img/favorite-inactive.svg');
-    mask-size: 20px;
-}
