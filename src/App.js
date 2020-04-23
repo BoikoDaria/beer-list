@@ -45,9 +45,8 @@ class App extends React.Component {
 
     return (
       <div className="App">
-
-        <List toggleFavorites={this.toggleFavorites} items={items} favorites={favorites} />
-        <List toggleFavorites={this.toggleFavorites} items={favorites} favorites={favorites} />
+        <List title='Beer which pair well with taco' toggleFavorites={this.toggleFavorites} items={items} favorites={favorites} />
+        <List title='Favorite beers' toggleFavorites={this.toggleFavorites} items={favorites} favorites={favorites} />
       </div>
     );
   }

@@ -1,11 +1,18 @@
 .beer-list {
+    overflow: auto;    
+}
+
+.beer-list-container {
     display: flex;
     flex-direction: column;
-    overflow: auto;
     width: 48%;
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-sizing: border-box;
     height: 100%;
     border-radius: 5px;
+}
+
+.beer-list-container > h3 {
+    text-align: center;
 }
