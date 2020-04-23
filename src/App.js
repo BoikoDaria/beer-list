@@ -3,6 +3,7 @@ import List from './components/List'
 import getFavorites from './getFavorites';
 import './App.css';
 import { FAVORITE_KEY } from './constants';
+import getBeer from './data-providers/getBeer';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,9 +16,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-      fetch('https://api.punkapi.com/v2/beers?ibu_gt=30&food=taco').then((response) => {
-          return response.json && response.json();
-      }).then((items) => {
+      getBeer().then((items) => {
           this.setState({ items });
       })
   }
@@ -34,11 +33,11 @@ class App extends React.Component {
       } else {
         favCopy.unshift(item);
       }
-
+  
       return { favorites: favCopy };
     }, () => {
       localStorage.setItem(FAVORITE_KEY, JSON.stringify(this.state.favorites));
-    })
+    });
   }
 
   render() {
@@ -46,6 +45,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
+
         <List toggleFavorites={this.toggleFavorites} items={items} favorites={favorites} />
         <List toggleFavorites={this.toggleFavorites} items={favorites} favorites={favorites} />
       </div>

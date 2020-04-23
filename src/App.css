@@ -6,15 +6,6 @@
   box-sizing: border-box;
 }
 
-.App > div {
-  width: 48%;
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-sizing: border-box;
-  height: 100%;
-  border-radius: 5px;
-}
-
 html, 
 body {
   height: 100%;
